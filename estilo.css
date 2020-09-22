@@ -1,0 +1,495 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+
+
+body {
+    font-family: 'arial';
+
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title {
+    color: #33ff00d0;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: hsl(39, 89%, 51%);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(125, 100%, 61%, 0.603), hsla(0, 90%, 49%, 0.63));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(256, 86%, 71%, 0.616), hsla(130, 72%, 72%, 0.61)), url(https://es.jumpseller.com/images/learn/choosing-platform/laptop.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.navegacion {
+    
+    width: 1000px;
+    margin: 30px auto;
+    background: rgb(79, 226, 71);
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: honeydew;
+    font-family: 'arial';
+    text-decoration: none;
+
+}
+
+.menu li a:hover{
+    color: rgba(0, 0, 0, 0.6);
+    transition: all .3s;
+}
+
+/*submenu*/
+
+
+
+.submenu{
+    position: absolute;
+    background: rgb(54, 58, 54);
+    width: 180%;
+    visibility: hidden;
+    
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: linen;
+    font-family: 'arial';
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    
+
+}
+
+nav>a {
+    color: aliceblue;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 300;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* about us*/
+
+
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.imagen-about-us {
+    width: 40%;
+   
+}
+
+
+
+.sobre-nosotros .contenido-textos {
+    width: 48%;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+}
+
+
+.contenido-textos h3 span {
+    background: chartreuse;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 28px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+
+/*galeria*/
+
+
+
+.portafolio {
+    background: #f2f2f2;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.image-port {
+    width: 25%;
+    height: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.image-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transform: scale(0);
+    background: hsla(105, 100%, 50%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: ivory;
+}
+
+.image-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+.hover-galeria a{
+    color: cornsilk;
+}
+
+/*clientes*/
+
+
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card {
+    background: rgb(96, 216, 72);
+    display: flex;
+    width: 40%;
+    height: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    border: 3px solid #ffffff;
+}
+
+.cards .card  > .contenido-textos {
+    width: 60%;
+    color: #ffffff;
+}
+
+.cards .card  > .contenido-textos p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+
+/* our team*/
+
+
+
+.about-servicios{
+    background: #ffffff;
+    padding-bottom: 30px;
+
+}
+
+.servicio-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicio-ind{
+    width: 90%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 50%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+    color: chartreuse;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    
+}
+
+
+
+/*footer*/
+
+
+
+footer{
+    background: rgba(0, 0, 0, .5);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #878c85d0;
+}
+
+.contenedor-foot{
+    text-align: center;
+}
+
+.contenedor-foot h4{
+    color: #f2f2f2;
+    border-bottom: 3px solid #33ff00d0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+.contenedor-foot p{
+    color: #ffffff;
+}
+
+.title-final{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: chartreuse;
+}
+
+.container-all{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top: 100px;
+    border-top: 6px solid #33ff00d0;
+}
+
+.container-all img{
+    float: left;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.container-all p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.container-licuadora{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top: 100px;
+    border-top: 6px solid #33ff00d0;
+}
+
+.container-licuadora img{
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.container-licuadora p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.servicio-fallo{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top: 100px;
+    border-top: 6px solid #33ff00d0;
+}
+
+.servicio-fallo h3{
+    color: chartreuse;
+    text-align: center;
+}
+
+.servicio-fallo p{
+    margin: 10px ;
+}
+
+.servicio-fallo img{
+    width: 50%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top: 50px;
+    border-top: 6px solid #33ff00d0;
+    margin-left: 200px;
+    
+}
+
+.servicio-fallo p samp{
+    background: chartreuse;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 1005;
+    height: 28px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+
+
+.contenedor-contacto{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly ;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #878c85d0;
+}
+
+.contenedor-conta{
+    text-align: center;
+}
+
+.contenedor-conta h4{
+    color: #212121;
+    border-bottom: 3px solid #33ff00d0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+.contenedor-conta p{
+    color: #000000;
+}
+
+.video{
+   width: 30px;
+   height: 250px;
+   margin-left: 220px;
+}
